@@ -1,6 +1,6 @@
 {
   "name": "easy-mathjax",
-  "version": "0.0.1",
+  "version": "0.0.2",
   "description": "Faclitate MathJax usage.",
   "main": "easy-mathjax.js",
   "scripts": {
