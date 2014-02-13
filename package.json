@@ -1,7 +1,7 @@
 {
   "name": "easy-mathjax",
   "version": "0.1.0",
-  "description": "Faclitate MathJax usage.",
+  "description": "Facilitate MathJax usage.",
   "browser": "lib/easy-mathjax.js",
   "scripts": {
     "prepublish": "grunt build",
