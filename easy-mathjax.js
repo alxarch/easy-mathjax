@@ -49,12 +49,11 @@
 	EasyMathJax.prototype = {
 		injected: function () {
 			var injected = [];
-			var el = this.begin;
-			while (el && el.nextElementSibling !== this.end) {
+			var el = this.script;
+			while (el && el.nextElementSibling) {
 				injected.push(el);
 				el = el.nextElementSibling;
 			}
-			injected.push(this.end);
 			return injected;
 		},
 		clean: function () {
@@ -137,20 +136,10 @@
 				skipStartupTypeset: true
 			});
 			
-			// Inject script tags to head.
-			// Pad it with identifiable script tags.
-			this.begin = document.createElement('script');
-			this.begin.type = "mathjax/begin";
-			document.head.appendChild(this.begin);
-
 			this.script = document.createElement('script');
 			this.script.src = this.options.url;
 			document.head.appendChild(this.script);
 
-			this.end = document.createElement('script');
-			this.end.type = "mathjax/end";
-			document.head.appendChild(this.end);
-			
 			this.onReady(function (){
 				if (this.options.debug) {
 					window.MathJax.Hub.Startup.signal.Interest(function(message) {
