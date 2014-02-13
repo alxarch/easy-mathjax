@@ -1,4 +1,4 @@
-dist/
+lib/
 lib-cov
 *.seed
 *.log

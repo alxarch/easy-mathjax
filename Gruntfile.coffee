@@ -3,28 +3,27 @@ module.exports = (grunt) ->
 		jasmine:
 			all:
 				options:
-					specs: "dist/spec/*Spec.js"
-					"web-security": no
+					specs: "lib/spec/*Spec.js"
 					
-				src: "dist/*.js"
+				src: "lib/*.js"
 		coffee:
 			options:
 				bare: yes
 
-			spec:
+			all:
 				expand: yes
 				src: "spec/**/*Spec.coffee"
-				dest: "dist/"
+				dest: "lib/"
 				ext: ".js"
 			compile:
 				cwd: "src/"
 				expand: yes
 				src: "**/*.coffee"
-				dest: "dist/"
+				dest: "lib/"
 				ext: ".js"
 		clean:
-			spec: "dist/spec/**/*"
-			compiled: "dist/*.js"
+			spec: "lib/spec/**/*"
+			compiled: "lib/*.{js,map}"
 
 	grunt.loadNpmTasks "grunt-contrib-jasmine"
 	grunt.loadNpmTasks "grunt-contrib-coffee"

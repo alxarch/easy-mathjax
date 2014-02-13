@@ -2,7 +2,7 @@
   "name": "easy-mathjax",
   "version": "0.1.0",
   "description": "Faclitate MathJax usage.",
-  "browser": "dist/easy-mathjax.js",
+  "browser": "lib/easy-mathjax.js",
   "scripts": {
     "prepublish": "grunt clean coffee:compile",
     "test": "grunt"
