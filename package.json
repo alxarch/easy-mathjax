@@ -14,7 +14,7 @@
   "keywords": [
     "mathjax"
   ],
-  "author": "Sigalas Alexandros",
+  "author": "Alexandros Sigalas <alxarch@gmail.com>",
   "license": "Apache v2",
   "bugs": {
     "url": "https://github.com/alxarch/easy-mathjax/issues"
