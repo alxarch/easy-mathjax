@@ -12,8 +12,7 @@
     "url": "git://github.com/alxarch/easy-mathjax.git"
   },
   "keywords": [
-    "mathjax",
-    "math"
+    "mathjax"
   ],
   "author": "Sigalas Alexandros",
   "license": "Apache v2",
