@@ -16,13 +16,18 @@ module.exports = (grunt) ->
 				src: "spec/**/*Spec.coffee"
 				dest: "dist/"
 				ext: ".js"
-			easy:
+			compile:
 				cwd: "src/"
 				expand: yes
 				src: "**/*.coffee"
 				dest: "dist/"
 				ext: ".js"
+		clean:
+			spec: "dist/spec/**/*"
+			compiled: "dist/*.js"
 
 	grunt.loadNpmTasks "grunt-contrib-jasmine"
 	grunt.loadNpmTasks "grunt-contrib-coffee"
-	grunt.registerTask "default", ["coffee", "jasmine"]
+	grunt.loadNpmTasks "grunt-contrib-clean"
+
+	grunt.registerTask "default", ["clean", "coffee", "jasmine"]
