@@ -39,9 +39,9 @@
 	};
 
 	var EasyMathJax = function (options) {
-		this.options = extend({}, options, {
+		this.options = extend({
 			url: "http://cdn.mathjax.org/mathjax/latest/MathJax.js"
-		});
+		}, options);
 	};
 	
 	var matchFontUrl = /url\s*\(\s*['"]([^\)]+fonts\/HTML\-CSS\/([^\/]+\/(?:woff|otf|eot)\/[^-]+\-(?:Regular|Italic|Bold|Bolditalic)\.(?:woff|eot|otf)))['"]\s*\)/g;
