@@ -7,10 +7,10 @@ module.exports = (grunt) ->
 					
 				src: "lib/*.js"
 		coffee:
-			options:
-				bare: yes
 
 			all:
+				options:
+					bare: yes
 				expand: yes
 				src: "spec/**/*Spec.coffee"
 				dest: "lib/"
