@@ -4,8 +4,8 @@
   "description": "Faclitate MathJax usage.",
   "browser": "lib/easy-mathjax.js",
   "scripts": {
-    "prepublish": "grunt clean coffee:compile",
-    "test": "grunt"
+    "prepublish": "grunt build",
+    "test": "grunt test"
   },
   "repository": {
     "type": "git",
