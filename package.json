@@ -3,6 +3,7 @@
   "version": "0.1.1",
   "description": "Facilitate MathJax usage.",
   "browser": "lib/easy-mathjax.js",
+  "main": "lib/easy-mathjax.js",
   "scripts": {
     "prepublish": "grunt build",
     "test": "grunt test"
