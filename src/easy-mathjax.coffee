@@ -112,7 +112,8 @@ class EasyMathJax
 		for el in $$ selector
 			window.MathJax.Hub.Queue ["Typeset", window.MathJax.Hub, el]
 
-		window.MathJax.Hub.Queue(callback) unless typeof callback isnt "function"
+		if typeof callback is "function"
+			window.MathJax.Hub.Queue(callback)
 		@
 
 @EasyMathJax = EasyMathJax
