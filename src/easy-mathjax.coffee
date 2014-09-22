@@ -35,6 +35,7 @@ class EasyMathJax
 			(?:woff|eot|otf)
 			) # end font
 			) # end url
+			[^'"]* # i.e. ver=2.x blah
 			['"]
 			\s*
 			\)
